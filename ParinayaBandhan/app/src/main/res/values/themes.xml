@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ParinayaBandhan" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:statusBarColor">@color/darkred</item>         <!--  status bar app top colour  -->
+    </style>
+
+    <style name="Theme.ParinayaBandhan" parent="Base.Theme.ParinayaBandhan" />
+
+    <style name="Theme.ParinayaBandhan.Login" parent="Base.Theme.ParinayaBandhan">
+        <item name="android:statusBarColor">@android:color/white</item> <!-- login activity status bar colour White status bar color -->
+    </style>
+
+    <style name="Theme.ParinayaBandhan.home" parent="Base.Theme.ParinayaBandhan">
+        <item name="android:statusBarColor">@android:color/white</item> <!-- login activity status bar colour White status bar color -->
+    </style>
+
+</resources>
+

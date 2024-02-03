@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Parinaya Bandhan</string>
+    <string-array name="this_profile">
+        <item>for you</item>
+        <item>sister</item>
+        <item>brother</item>
+        <item>others</item>
+
+
+    </string-array>
+    //for Exposed Dropdown Menu
+
+    <string-array name="Gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item> other </item>
+    </string-array>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_home">Home</string>
+    <string name="title_premium">Premium</string>
+    <string name="title_match">Match</string>
+    <string name="title_inbox">Inbox</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="your_journey_past_a_week">Your Journey past a week</string>
+    <string name="useridkey">7680840372</string>
+
+    <string-array name="number_array">
+        <item>select</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+
+</resources>

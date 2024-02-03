@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:app2="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/fragment_container4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/usernameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Hello,"
+                android:fontFamily="@font/roboto"
+                android:layout_marginLeft="8dp"
+                android:textSize="@dimen/_20sdp"
+                android:textColor="@color/lightpink"/>
+
+
+
+            <ImageButton
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/search"
+                android:layout_marginStart="170dp"
+                android:background="@color/transparent"
+                android:layout_marginTop="20dp"/>
+
+            <ImageButton
+                android:id="@+id/notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/notificatio1"
+                android:background="@color/transparent"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/search"
+                android:layout_marginStart="20dp"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/profileImageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/profile_img"
+                android:layout_toRightOf="@id/notification"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"/>
+
+
+
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/usernameLayout">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+        <RelativeLayout
+            android:id="@+id/bannersLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/banners"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"/>
+
+
+            <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                android:id="@+id/dots_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                app:dotsColor="@color/white"
+                app:dotsCornerRadius="8dp"
+                app:dotsSize="10dp"
+                app:dotsSpacing="4dp"
+                app:dotsWidthFactor="2.5"
+                app:progressMode="true"
+                app:selectedDotColor="@color/black" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/yourLinearLayoutId"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/bannersLayout"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/timelinejourney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Journey Past a week"
+                android:fontFamily="@font/roboto"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"/>
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_200sdp"
+                android:layout_below="@id/timelinejourney"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="8dp">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview1"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_marginStart="10dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="4dp"
+                    card_view:cardPreventCornerOverlap="false"
+                    app:cardPreventCornerOverlap="false">
+
+                    <TextView
+                        android:id="@+id/TextView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_30sdp"
+                        android:textSize="13sp"
+                        android:text="Matchs"
+                        android:fontFamily="@font/roboto"
+                        android:layout_marginStart="@dimen/_5sdp"/>
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="@dimen/_25sdp"
+                        android:background="#E91E63"
+                        android:layout_marginStart="@dimen/_55sdp" />
+
+                    <TextView
+                        android:id="@+id/Matchstext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/_20sdp"
+                        android:fontFamily="@font/roboto"
+                        android:layout_marginStart="@dimen/_65sdp"
+                        android:layout_marginTop="@dimen/_25sdp"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview2"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_toRightOf="@+id/cardview1"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="4dp"
+                    card_view:cardPreventCornerOverlap="false"
+                    app:cardPreventCornerOverlap="false">
+
+                    <TextView
+                        android:id="@+id/TextView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_25sdp"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/roboto"
+                        android:text="Interest\nReceived"
+                        android:layout_marginStart="@dimen/_5sdp"/>
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="@dimen/_25sdp"
+                        android:background="#E91E63"
+                        android:layout_marginStart="@dimen/_64sdp" />
+
+                    <TextView
+                        android:id="@+id/Receivedtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:fontFamily="@font/roboto"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/_20sdp"
+                        android:layout_marginStart="@dimen/_70sdp"
+                        android:layout_marginTop="@dimen/_25sdp"/>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview3"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_toRightOf="@+id/cardview2"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="4dp"
+                    card_view:cardPreventCornerOverlap="false"
+                    app:cardPreventCornerOverlap="false">
+
+
+                    <TextView
+                        android:id="@+id/TextView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_25sdp"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/roboto"
+                        android:text="Interest\nSent"
+                        android:layout_marginStart="@dimen/_5sdp"/>
+
+
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="@dimen/_25sdp"
+                        android:background="#E91E63"
+                        android:layout_marginStart="@dimen/_55sdp" />
+
+                    <TextView
+                        android:id="@+id/Senttext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:fontFamily="@font/roboto"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/_20sdp"
+                        android:layout_marginStart="@dimen/_65sdp"
+                        android:layout_marginTop="@dimen/_25sdp"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+
+                <ImageView
+                    android:id="@+id/matchimg"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="40dp"
+                    android:elevation="10dp"
+                    android:src="@drawable/matchs1" />
+
+                <ImageView
+                    android:id="@+id/likeimg"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/_165sdp"
+                    android:elevation="10dp"
+                    android:src="@drawable/like1" />
+
+                <ImageView
+                    android:id="@+id/chatimg"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/_280sdp"
+                    android:elevation="10dp"
+                    android:src="@drawable/chat1" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bestlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/yourLinearLayoutId">
+
+            <GridLayout
+                android:id="@+id/grid2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:rowCount="1"
+                android:columnCount="3"
+                android:layout_marginTop="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/Topmatch"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="4dp">
+
+                    <ImageView
+                        android:id="@+id/Topmatchimage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/topmatch1"
+                        android:scaleType="centerCrop"/>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardview22"
+                        android:layout_width="@dimen/_160sdp"
+                        android:layout_height="186dp"
+                        android:layout_marginLeft="-30dp"
+                        android:layout_marginTop="@dimen/_80sdp"
+                        app:cardBackgroundColor="#C70039"
+                        app:cardCornerRadius="70dp"
+                        app:cardElevation="4dp"
+                        app:cardForegroundColor="@android:color/transparent"
+                        app:checkedIconSize="0dp"
+                        app:strokeColor="@color/lightpink"
+                        app:strokeWidth="4dp">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:fontFamily="@font/roboto"
+                            android:text="TOP\nMATCH OF\nWEEK"
+                            android:textColor="@color/white"
+                            android:textAlignment="center"/>
+
+
+                    </com.google.android.material.card.MaterialCardView>
+                    </androidx.cardview.widget.CardView>
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/OFFERS"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="4dp">
+
+                    <ImageView
+                    android:id="@+id/OFFERSimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/offers1"
+                    android:scaleType="centerCrop"/>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardview23"
+                        android:layout_width="@dimen/_160sdp"
+                        android:layout_height="@dimen/_188sdp"
+                        android:layout_marginLeft="-30dp"
+                        android:layout_marginTop="@dimen/_80sdp"
+                        app:cardBackgroundColor="#C70039"
+                        app:cardForegroundColor="@android:color/transparent"
+                        app:checkedIconSize="0dp"
+                        app:cardCornerRadius="70dp"
+                        app:cardElevation="2dp"
+                        app:strokeWidth="4dp"
+                        app:strokeColor="@color/lightpink">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="BEST\nOFFERS"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/roboto"
+                            android:layout_marginTop="@dimen/_12sdp"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:textAlignment="center"/>
+                    </com.google.android.material.card.MaterialCardView>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/ASTROLOGER"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="4dp">
+
+                    <ImageView
+                        android:id="@+id/ASTROLOGERimage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/astrologer1"
+                        android:scaleType="centerCrop"/>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardview24"
+                        android:layout_width="@dimen/_160sdp"
+                        android:layout_height="@dimen/_188sdp"
+                        android:layout_marginLeft="-30dp"
+                        android:layout_marginTop="@dimen/_80sdp"
+                        app:cardBackgroundColor="#C70039"
+                        app:cardForegroundColor="@android:color/transparent"
+                        app:checkedIconSize="0dp"
+                        app:cardCornerRadius="70dp"
+                        app:cardElevation="2dp"
+                        app:strokeWidth="4dp"
+                        app:strokeColor="@color/lightpink">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="TALK TO\nASTROLOGER"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/roboto"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:textAlignment="center"/>
+                    </com.google.android.material.card.MaterialCardView>
+
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+        </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/referlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_below="@+id/bestlayout">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_100sdp"
+                        android:src="@drawable/refer12"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:scaleType="centerCrop"/>
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:id="@+id/DailyLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/referlayout"
+                    android:layout_marginTop="@dimen/_5sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/Daily"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your Daily Recommendation."
+                        android:fontFamily="@font/roboto"
+                        android:textSize="@dimen/_16sdp"
+                        android:layout_marginStart="@dimen/_10sdp"/>
+
+                        <TextView
+                            android:id="@+id/seeall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="See All"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:layout_marginLeft="@dimen/_80sdp"
+                            android:textColor="@color/light_blue_A400"/>
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/DailyRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:orientation="horizontal"
+                        card_view:listitem="@layout/daily"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_200sdp"
+                    android:layout_below="@+id/DailyLayout"
+                    android:layout_marginTop="@dimen/_8sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/stories"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Our Weekly Success Stories."
+                            android:fontFamily="@font/roboto"
+                            android:textSize="@dimen/_16sdp"
+                            android:layout_marginStart="@dimen/_10sdp"/>
+
+                        <TextView
+                            android:id="@+id/seeall2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="See All"
+                            android:layout_marginLeft="@dimen/_80sdp"
+                            android:textColor="@color/light_blue_A400"/>
+                    </LinearLayout>
+
+
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+

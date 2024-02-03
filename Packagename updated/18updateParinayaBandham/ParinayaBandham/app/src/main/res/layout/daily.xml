@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_centerVertical="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Your CardView -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/trendingcardview"
+            android:layout_width="120dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/images"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:srcCompat="@tools:sample/avatars"
+                android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ANVESH"
+            android:gravity="center"
+            android:layout_marginTop="-20dp"
+            android:fontFamily="@font/roboto"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/Age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="@dimen/_15sdp"
+            android:background="#66000000"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginStart="@dimen/_10sdp" />
+
+            <TextView
+                android:id="@+id/educational_qualifications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="B-tech"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>
+
+
